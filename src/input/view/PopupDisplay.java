@@ -1,4 +1,4 @@
-package input.controller;
+package input.view;
 
 import javax.swing.JOptionPane;
 /**
@@ -12,7 +12,7 @@ public class PopupDisplay
 
 	public String getAnswer(String input)
 	{
-		String answer = "You were meant to know.";
+		String answer = "";
 		
 		answer = JOptionPane.showInputDialog(null, input);
 		
