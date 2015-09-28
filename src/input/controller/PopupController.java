@@ -22,6 +22,12 @@ public class PopupController
 		
 		int age;
 		String tempAge = myPopups.getAnswer("Type in your age");
+		
+		while(!isInteger(tempAge))
+		{
+			tempAge = myPopups.getAnswer("Type in an integer value!!!");
+		}
+		
 		if(isInteger(tempAge))
 		{
 			age = Integer.parseInt(tempAge);
@@ -35,6 +41,13 @@ public class PopupController
 		
 		double weight;
 		String tempWeight= myPopups.getAnswer("Type in your weight");
+		
+		while(!isDouble(tempWeight))
+		{
+			tempWeight = myPopups.getAnswer("Type in a valid double value!");
+		}
+			
+			
 		if(isDouble(tempWeight))
 		{
 			weight = Double.parseDouble(tempWeight);

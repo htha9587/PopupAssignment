@@ -22,7 +22,7 @@ public class Thing
 	
 	public String toString()
 	{
-		String thingInfo = name + "Is" + age;
+		String thingInfo = name + "Is" + age + "years old and weighs " + weight;
 		return thingInfo;
 	}
 }
